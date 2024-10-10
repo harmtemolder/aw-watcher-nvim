@@ -6,6 +6,22 @@ aw-watcher-nvim
 - `curl`
 - `git` (Optional, only if `aw_branch` is true)
 
+### Installation with LazyVim
+
+Add the following to your plugins folder as `aw-watcher-nvim.lua`:
+
+```lua
+return {
+  {
+    "Luxed/aw-watcher-nvim",
+    cmd = "AWStart",
+    keys = {},
+    opts = {},
+  },
+}
+
+```
+
 ### Configuration
 
 Even though this is a Neovim only version, its configuration is still fully backwards compatible with the [vim version](https://github.com/ActivityWatch/aw-watcher-vim).
@@ -40,7 +56,7 @@ local aw_section = {
 }
 ~~~
 
-To make this "section" work, see the lualine documentation [here](https://github.com/nvim-lualine/lualine.nvim#usage-and-customization).  
+To make this "section" work, see the lualine documentation [here](https://github.com/nvim-lualine/lualine.nvim#usage-and-customization).
 To have the same configuration as in the pictures, do the following:
 
 ~~~lua
